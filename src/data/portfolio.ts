@@ -23,6 +23,10 @@ export const PORTFOLIO_DATA = {
         ctaPrimary: "Let's Talk",
         ctaSecondary: "View Work"
     },
+    social: {
+        linkedin: "https://www.linkedin.com/in/deyvisonsoutoap",
+        github: "https://github.com/deyvisonsouto"
+    },
     timeline: [
         {
             id: 1,
