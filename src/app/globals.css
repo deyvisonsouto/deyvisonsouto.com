@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* TAILWIND v4 THEME CONFIGURATION 
+  The @theme block automatically maps these to utilities 
+  (e.g., --color-neon becomes text-neon, bg-neon, border-neon).
+*/
+@theme {
+  /* Colors extracted from design images */
+  --color-bg-primary: #0b0b0f;
+  /* Deep Blue/Black Background */
+  --color-bg-card: #141923;
+  /* Blue-tinted charcoal */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #94a3b8;
+  /* Slate-400 */
+
+  --color-neon: #00f0ff;
+  /* The main Cyan Accent */
+  --color-neon-dim: #00c2ff;
+  /* Secondary Cyan */
+
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Animation Curves */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* CUSTOM UTILITIES 
+  In v4, we use @utility to define complex custom classes 
+*/
+
+@utility glass-card {
+  background-color: rgb(20 25 35 / 0.6);
+  /* --color-bg-card with opacity */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255 / 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility glass-card-hover {
+  @apply transition-all duration-300;
+
+  &:hover {
+    border-color: rgb(0 240 255 / 0.5);
+    /* --color-neon */
+    box-shadow: 0 0 30px -10px rgb(0 240 255 / 0.15);
   }
 }
 
+@utility bg-cyan-gradient {
+  background: linear-gradient(90deg, #00F0FF 0%, #00C2FF 100%);
+}
+
+@utility shadow-neon {
+  box-shadow: 0 0 20px -5px rgb(0 240 255 / 0.5);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 10px rgb(0 240 255 / 0.5);
+}
+
+/* Base Styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon);
 }
