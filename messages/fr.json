@@ -1,31 +1,43 @@
 {
+    "Hero": {
+        "titleStart": "Allier Stratégie Technique",
+        "titleEnd": "et Exécution.",
+        "subtitle": "Ingénieur Logiciel Principal avec plus de 15 ans d'expérience. Je combine une expertise full-stack en React et C# avec un leadership empathique pour bâtir des équipes très performantes.",
+        "cta": "Voir l'Expertise"
+    },
     "HomePage": {
-        "titleLine1": "CONSTRUIRE MIEUX.",
-        "titleLine2": "DIRIGER PLUS INTELLIGEMMENT.",
-        "role": "Senior Engineering Manager | Équipes en expansion et systèmes distribués.",
-        "viewPortfolio": "VOIR LE PORTFOLIO",
-        "archVisual": "[ Visuel d'architecture isométrique 3D ]"
+        "titleLine1": "Allier Stratégie Technique",
+        "titleLine2": "et Exécution.",
+        "role": "Ingénieur Logiciel Principal avec plus de 15 ans d'expérience. Je combine une expertise full-stack en React et C# avec un leadership empathique pour bâtir des équipes très performantes.",
+        "viewPortfolio": "VOIR L'EXPERTISE",
+        "archVisual": "[ Visualisation d'Architecture Isométrique 3D ]"
     },
     "Timeline": {
         "title": "Parcours Professionnel",
         "jobs": {
             "job1": {
-                "year": "2022 - Présent",
-                "role": "Senior Engineering Manager",
-                "company": "Global Tech",
-                "stack": "AWS, iOS, Go"
+                "year": "2025",
+                "role": "Ingénieur Logiciel Principal",
+                "company": "Plusgrade",
+                "stack": "React, NodeJS, Cloudflare, JIRA"
             },
             "job2": {
-                "year": "2018 - 2022",
-                "role": "Développeur Principal",
-                "company": "FinTech Corp",
-                "stack": "React, Node, K8s"
+                "year": "2021",
+                "role": "Développeur Logiciel Principal",
+                "company": "MEDFAR Solutions Cliniques",
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
             },
             "job3": {
-                "year": "2014 - 2018",
-                "role": "Architecte Logiciel",
-                "company": "Start-up Inc",
-                "stack": "Python, Docker"
+                "year": "2020",
+                "role": "Responsable Technique Frontend",
+                "company": "Mavtek",
+                "stack": "VueJS, AWS, PHP, MySQL"
+            },
+            "job4": {
+                "year": "2018",
+                "role": "Développeur Logiciel",
+                "company": "AZUR GROUP",
+                "stack": "Angular, C#, Visual Studio"
             }
         }
     },
@@ -33,16 +45,16 @@
         "title": "Expertise",
         "items": {
             "service1": {
-                "title": "Leadership Technique",
-                "description": "Mentorat d'ingénieurs, définition de plans de carrière et promotion d'une culture de l'innovation."
+                "title": "Leadership en Ingénierie",
+                "description": "Planification trimestrielle, prévision de la capacité de l'équipe et promotion d'un environnement empathique pour des équipes de 12 à 15 ingénieurs."
             },
             "service2": {
-                "title": "Architecture Système",
-                "description": "Conception d'architectures frontend évolutives, maintenables et performantes."
+                "title": "Optimisation des Processus",
+                "description": "Mise en œuvre des méthodologies SCRUM et CMMI pour améliorer les flux de travail de développement et l'efficacité."
             },
             "service3": {
-                "title": "Développement Full-Stack",
-                "description": "Livraison de bout en bout utilisant des stacks modernes comme T3 ou Next.js App Router."
+                "title": "Architecture Full-Stack",
+                "description": "Architecture de solutions évolutives utilisant C#, React (TypeScript) et Node.js en mettant l'accent sur l'intégration cloud (AWS/Azure)."
             }
         }
     },

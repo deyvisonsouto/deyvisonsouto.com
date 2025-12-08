@@ -1,37 +1,43 @@
 {
     "Hero": {
-        "titleStart": "BUILD BETTER.",
-        "titleEnd": "LEAD SMARTER.",
-        "subtitle": "Senior Engineering Manager | Scaling Teams & Distributed Systems.",
-        "cta": "View Portfolio"
+        "titleStart": "Bridging Technical",
+        "titleEnd": "Strategy with Execution.",
+        "subtitle": "Lead Software Engineer with 15+ years of experience. I combine full-stack expertise in React & C# with empathetic leadership to build high-velocity teams.",
+        "cta": "View Expertise"
     },
     "HomePage": {
-        "titleLine1": "BUILD BETTER.",
-        "titleLine2": "LEAD SMARTER.",
-        "role": "Senior Engineering Manager | Scaling Teams & Distributed Systems.",
-        "viewPortfolio": "VIEW PORTFOLIO",
+        "titleLine1": "Bridging Technical",
+        "titleLine2": "Strategy with Execution.",
+        "role": "Lead Software Engineer with 15+ years of experience. I combine full-stack expertise in React & C# with empathetic leadership to build high-velocity teams.",
+        "viewPortfolio": "VIEW EXPERTISE",
         "archVisual": "[ 3D Isometric Architecture Visual ]"
     },
     "Timeline": {
         "title": "Career Timeline",
         "jobs": {
             "job1": {
-                "year": "2022 - Present",
-                "role": "Senior Engineering Manager",
-                "company": "Global Tech",
-                "stack": "AWS, iOS, Go"
+                "year": "2025",
+                "role": "Lead Software Engineer",
+                "company": "Plusgrade",
+                "stack": "React, NodeJS, Cloudflare, JIRA"
             },
             "job2": {
-                "year": "2018 - 2022",
-                "role": "Lead Developer",
-                "company": "FinTech Corp",
-                "stack": "React, Node, K8s"
+                "year": "2021",
+                "role": "Lead Software Developer",
+                "company": "MEDFAR Solutions Cliniques",
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
             },
             "job3": {
-                "year": "2014 - 2018",
-                "role": "Software Architect",
-                "company": "Startup Inc",
-                "stack": "Python, Docker"
+                "year": "2020",
+                "role": "Frontend Technical Lead",
+                "company": "Mavtek",
+                "stack": "VueJS, AWS, PHP, MySQL"
+            },
+            "job4": {
+                "year": "2018",
+                "role": "Software Developer",
+                "company": "AZUR GROUP",
+                "stack": "Angular, C#, Visual Studio"
             }
         }
     },
@@ -39,16 +45,16 @@
         "title": "Expertise",
         "items": {
             "service1": {
-                "title": "Technical Leadership",
-                "description": "Mentoring engineers, defining career ladders, and fostering a culture of innovation."
+                "title": "Engineering Leadership",
+                "description": "Quarter planning, team capacity forecasting, and fostering an empathetic environment for teams of 12-15 engineers."
             },
             "service2": {
-                "title": "System Architecture",
-                "description": "Designing scalable, maintainable, and high-performance frontend architectures."
+                "title": "Process Optimization",
+                "description": "Implementing SCRUM and CMMI methodologies to enhance development workflows and efficiency."
             },
             "service3": {
-                "title": "Full-Stack Development",
-                "description": "End-to-end delivery using modern stacks like the T3 Stack or Next.js App Router."
+                "title": "Full-Stack Architecture",
+                "description": "Architecting scalable solutions using C#, React (TypeScript), and Node.js with a focus on cloud integration (AWS/Azure)."
             }
         }
     },

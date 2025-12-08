@@ -1,53 +1,65 @@
 {
+    "Hero": {
+        "titleStart": "Unindo Estratégia Técnica",
+        "titleEnd": "e Execução.",
+        "subtitle": "Engenheiro de Software Líder com mais de 15 anos de experiência. Combino liderança empática com experiência full-stack em React e C# para formar equipes de alta velocidade.",
+        "cta": "Ver Expertise"
+    },
     "HomePage": {
-        "titleLine1": "CONSTRUA MELHOR.",
-        "titleLine2": "LIDERE COM INTELIGÊNCIA.",
-        "role": "Gerente de Engenharia Senior | Escalando Equipes & Sistemas Distribuídos.",
-        "viewPortfolio": "VER PORTFÓLIO",
-        "archVisual": "[ Visual de Arquitetura Isométrica 3D ]"
+        "titleLine1": "Unindo Estratégia Técnica",
+        "titleLine2": "e Execução.",
+        "role": "Engenheiro de Software Líder com mais de 15 anos de experiência. Combino liderança empática com experiência full-stack em React e C# para formar equipes de alta velocidade.",
+        "viewPortfolio": "VER EXPERTISE",
+        "archVisual": "[ Visualização de Arquitetura Isométrica 3D ]"
     },
     "Timeline": {
         "title": "Trajetória Profissional",
         "jobs": {
             "job1": {
-                "year": "2022 - Atual",
-                "role": "Gerente de Engenharia Sênior",
-                "company": "Global Tech",
-                "stack": "AWS, iOS, Go"
+                "year": "2025",
+                "role": "Engenheiro de Software Líder",
+                "company": "Plusgrade",
+                "stack": "React, NodeJS, Cloudflare, JIRA"
             },
             "job2": {
-                "year": "2018 - 2022",
-                "role": "Desenvolvedor Líder",
-                "company": "FinTech Corp",
-                "stack": "React, Node, K8s"
+                "year": "2021",
+                "role": "Desenvolvedor de Software Líder",
+                "company": "MEDFAR Solutions Cliniques",
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
             },
             "job3": {
-                "year": "2014 - 2018",
-                "role": "Arquiteto de Software",
-                "company": "Startup Inc",
-                "stack": "Python, Docker"
+                "year": "2020",
+                "role": "Líder Técnico Frontend",
+                "company": "Mavtek",
+                "stack": "VueJS, AWS, PHP, MySQL"
+            },
+            "job4": {
+                "year": "2018",
+                "role": "Desenvolvedor de Software",
+                "company": "AZUR GROUP",
+                "stack": "Angular, C#, Visual Studio"
             }
         }
     },
     "Services": {
-        "title": "Especialidades",
+        "title": "Expertise",
         "items": {
             "service1": {
-                "title": "Liderança Técnica",
-                "description": "Mentoria de engenheiros, definição de planos de carreira e fomento de uma cultura de inovação."
+                "title": "Liderança de Engenharia",
+                "description": "Planejamento trimestral, previsão de capacidade da equipe e promoção de um ambiente empático para equipes de 12-15 engenheiros."
             },
             "service2": {
-                "title": "Arquitetura de Sistemas",
-                "description": "Design de arquiteturas frontend escaláveis, manuteníveis e de alta performance."
+                "title": "Otimização de Processos",
+                "description": "Implementação de metodologias SCRUM e CMMI para aprimorar fluxos de trabalho de desenvolvimento e eficiência."
             },
             "service3": {
-                "title": "Desenvolvimento Full-Stack",
-                "description": "Entrega de ponta a ponta usando stacks modernas como T3 ou Next.js App Router."
+                "title": "Arquitetura Full-Stack",
+                "description": "Arquitetando soluções escaláveis usando C#, React (TypeScript) e Node.js com foco em integração na nuvem (AWS/Azure)."
             }
         }
     },
     "Navigation": {
-        "home": "Início",
+        "home": "Home",
         "about": "Sobre",
         "services": "Serviços",
         "contact": "Contato"

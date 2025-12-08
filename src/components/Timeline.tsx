@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export const Timeline = () => {
     const t = useTranslations('Timeline');
-    const jobKeys = ['job1', 'job2', 'job3'] as const;
+    const jobKeys = ['job1', 'job2', 'job3', 'job4'] as const;
 
     return (
         <section id="timeline" className="py-24 px-6 md:px-20 relative">
