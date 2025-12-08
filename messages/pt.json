@@ -1,0 +1,55 @@
+{
+    "HomePage": {
+        "titleLine1": "CONSTRUA MELHOR.",
+        "titleLine2": "LIDERE COM INTELIGÊNCIA.",
+        "role": "Gerente de Engenharia Senior | Escalando Equipes & Sistemas Distribuídos.",
+        "viewPortfolio": "VER PORTFÓLIO",
+        "archVisual": "[ Visual de Arquitetura Isométrica 3D ]"
+    },
+    "Timeline": {
+        "title": "Trajetória Profissional",
+        "jobs": {
+            "job1": {
+                "year": "2022 - Atual",
+                "role": "Gerente de Engenharia Sênior",
+                "company": "Global Tech",
+                "stack": "AWS, iOS, Go"
+            },
+            "job2": {
+                "year": "2018 - 2022",
+                "role": "Desenvolvedor Líder",
+                "company": "FinTech Corp",
+                "stack": "React, Node, K8s"
+            },
+            "job3": {
+                "year": "2014 - 2018",
+                "role": "Arquiteto de Software",
+                "company": "Startup Inc",
+                "stack": "Python, Docker"
+            }
+        }
+    },
+    "Services": {
+        "title": "Especialidades",
+        "items": {
+            "service1": {
+                "title": "Liderança Técnica",
+                "description": "Mentoria de engenheiros, definição de planos de carreira e fomento de uma cultura de inovação."
+            },
+            "service2": {
+                "title": "Arquitetura de Sistemas",
+                "description": "Design de arquiteturas frontend escaláveis, manuteníveis e de alta performance."
+            },
+            "service3": {
+                "title": "Desenvolvimento Full-Stack",
+                "description": "Entrega de ponta a ponta usando stacks modernas como T3 ou Next.js App Router."
+            }
+        }
+    },
+    "Navigation": {
+        "home": "Início",
+        "about": "Sobre",
+        "services": "Serviços",
+        "contact": "Contato"
+    }
+}

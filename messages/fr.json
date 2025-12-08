@@ -1,0 +1,55 @@
+{
+    "HomePage": {
+        "titleLine1": "CONSTRUIRE MIEUX.",
+        "titleLine2": "DIRIGER PLUS INTELLIGEMMENT.",
+        "role": "Senior Engineering Manager | Équipes en expansion et systèmes distribués.",
+        "viewPortfolio": "VOIR LE PORTFOLIO",
+        "archVisual": "[ Visuel d'architecture isométrique 3D ]"
+    },
+    "Timeline": {
+        "title": "Parcours Professionnel",
+        "jobs": {
+            "job1": {
+                "year": "2022 - Présent",
+                "role": "Senior Engineering Manager",
+                "company": "Global Tech",
+                "stack": "AWS, iOS, Go"
+            },
+            "job2": {
+                "year": "2018 - 2022",
+                "role": "Développeur Principal",
+                "company": "FinTech Corp",
+                "stack": "React, Node, K8s"
+            },
+            "job3": {
+                "year": "2014 - 2018",
+                "role": "Architecte Logiciel",
+                "company": "Start-up Inc",
+                "stack": "Python, Docker"
+            }
+        }
+    },
+    "Services": {
+        "title": "Expertise",
+        "items": {
+            "service1": {
+                "title": "Leadership Technique",
+                "description": "Mentorat d'ingénieurs, définition de plans de carrière et promotion d'une culture de l'innovation."
+            },
+            "service2": {
+                "title": "Architecture Système",
+                "description": "Conception d'architectures frontend évolutives, maintenables et performantes."
+            },
+            "service3": {
+                "title": "Développement Full-Stack",
+                "description": "Livraison de bout en bout utilisant des stacks modernes comme T3 ou Next.js App Router."
+            }
+        }
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "contact": "Contact"
+    }
+}

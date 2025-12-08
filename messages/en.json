@@ -1,0 +1,61 @@
+{
+    "Hero": {
+        "titleStart": "BUILD BETTER.",
+        "titleEnd": "LEAD SMARTER.",
+        "subtitle": "Senior Engineering Manager | Scaling Teams & Distributed Systems.",
+        "cta": "View Portfolio"
+    },
+    "HomePage": {
+        "titleLine1": "BUILD BETTER.",
+        "titleLine2": "LEAD SMARTER.",
+        "role": "Senior Engineering Manager | Scaling Teams & Distributed Systems.",
+        "viewPortfolio": "VIEW PORTFOLIO",
+        "archVisual": "[ 3D Isometric Architecture Visual ]"
+    },
+    "Timeline": {
+        "title": "Career Timeline",
+        "jobs": {
+            "job1": {
+                "year": "2022 - Present",
+                "role": "Senior Engineering Manager",
+                "company": "Global Tech",
+                "stack": "AWS, iOS, Go"
+            },
+            "job2": {
+                "year": "2018 - 2022",
+                "role": "Lead Developer",
+                "company": "FinTech Corp",
+                "stack": "React, Node, K8s"
+            },
+            "job3": {
+                "year": "2014 - 2018",
+                "role": "Software Architect",
+                "company": "Startup Inc",
+                "stack": "Python, Docker"
+            }
+        }
+    },
+    "Services": {
+        "title": "Expertise",
+        "items": {
+            "service1": {
+                "title": "Technical Leadership",
+                "description": "Mentoring engineers, defining career ladders, and fostering a culture of innovation."
+            },
+            "service2": {
+                "title": "System Architecture",
+                "description": "Designing scalable, maintainable, and high-performance frontend architectures."
+            },
+            "service3": {
+                "title": "Full-Stack Development",
+                "description": "End-to-end delivery using modern stacks like the T3 Stack or Next.js App Router."
+            }
+        }
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    }
+}

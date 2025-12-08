@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
+    const t = useTranslations('HomePage');
+
     return (
         <section id="home" className="min-h-screen flex items-center pt-20 px-6 md:px-20 relative overflow-hidden">
             {/* Background Ambience (Subtle blue glow top right) */}
@@ -19,9 +22,9 @@ export const Hero = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
-                            BUILD BETTER.<br />
+                            {t('titleLine1')}<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">
-                                LEAD SMARTER.
+                                {t('titleLine2')}
                             </span>
                         </h1>
                     </motion.div>
@@ -32,7 +35,7 @@ export const Hero = () => {
                         transition={{ delay: 0.3, duration: 0.8 }}
                         className="text-lg md:text-xl text-slate-400 max-w-lg"
                     >
-                        Senior Engineering Manager | Scaling Teams & Distributed Systems.
+                        {t('role')}
                     </motion.p>
 
                     <motion.div
@@ -41,7 +44,7 @@ export const Hero = () => {
                         transition={{ delay: 0.5 }}
                     >
                         <button className="group relative px-8 py-4 bg-cyan-gradient rounded-full text-black font-bold text-lg shadow-neon hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                            VIEW PORTFOLIO
+                            {t('viewPortfolio')}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
                     </motion.div>
@@ -56,7 +59,7 @@ export const Hero = () => {
                 >
                     {/* Placeholder for the 3D isometric illustration seen in image_900c51.jpg */}
                     <div className="relative z-10 w-full h-[500px] rounded-2xl glass-card border-cyan-500/20 flex items-center justify-center">
-                        <div className="text-cyan-400/20 font-mono text-sm">[ 3D Isometric Architecture Visual ]</div>
+                        <div className="text-cyan-400/20 font-mono text-sm">{t('archVisual')}</div>
 
                         {/* Floating tech nodes animation */}
                         <motion.div

@@ -3,18 +3,16 @@
 import { motion } from "framer-motion";
 import { Briefcase, Code, Cloud } from "lucide-react";
 
-// Mock data based on the text in image_900f18.jpg
-const TIMELINE_DATA = [
-    { year: "2022 - Present", role: "Senior Engineering Manager", company: "Global Tech", stack: "AWS, iOS, Go" },
-    { year: "2018 - 2022", role: "Lead Developer", company: "FinTech Corp", stack: "React, Node, K8s" },
-    { year: "2014 - 2018", role: "Software Architect", company: "Startup Inc", stack: "Python, Docker" },
-];
+import { useTranslations } from "next-intl";
 
 export const Timeline = () => {
+    const t = useTranslations('Timeline');
+    const jobKeys = ['job1', 'job2', 'job3'] as const;
+
     return (
         <section id="timeline" className="py-24 px-6 md:px-20 relative">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold mb-16 text-center">Career Timeline</h2>
+                <h2 className="text-3xl font-bold mb-16 text-center">{t('title')}</h2>
 
                 <div className="relative pl-8 md:pl-0">
                     {/* The Laser Spine - Left aligned on mobile, Center on Desktop */}
@@ -31,9 +29,9 @@ export const Timeline = () => {
 
                     {/* Timeline Cards */}
                     <div className="space-y-12">
-                        {TIMELINE_DATA.map((item, i) => (
+                        {jobKeys.map((key, i) => (
                             <motion.div
-                                key={i}
+                                key={key}
                                 initial={{ opacity: 0, x: 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true, margin: "-50px" }}
@@ -45,12 +43,12 @@ export const Timeline = () => {
 
                                 {/* The Glass Card */}
                                 <div className="glass-card p-6 rounded-xl transition-all duration-300 group-hover:-translate-y-1">
-                                    <span className="text-xs font-mono text-cyan-400 mb-2 block">{item.year}</span>
-                                    <h3 className="text-xl font-bold text-white mb-1">{item.role}</h3>
-                                    <p className="text-slate-400 text-sm mb-4">at {item.company}</p>
+                                    <span className="text-xs font-mono text-cyan-400 mb-2 block">{t(`jobs.${key}.year`)}</span>
+                                    <h3 className="text-xl font-bold text-white mb-1">{t(`jobs.${key}.role`)}</h3>
+                                    <p className="text-slate-400 text-sm mb-4">at {t(`jobs.${key}.company`)}</p>
 
                                     <div className="flex gap-2 flex-wrap">
-                                        {item.stack.split(", ").map(tech => (
+                                        {t(`jobs.${key}.stack`).split(", ").map(tech => (
                                             <span key={tech} className="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] uppercase tracking-wider text-slate-300">
                                                 {tech}
                                             </span>
@@ -65,3 +63,4 @@ export const Timeline = () => {
         </section>
     );
 };
+

@@ -3,18 +3,21 @@
 import { Home, History, Briefcase, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
-const navItems = [
-    { id: "home", icon: Home, label: "Home" },
-    { id: "timeline", icon: History, label: "Story" },
-    { id: "services", icon: Briefcase, label: "Work" },
-    { id: "contact", icon: Mail, label: "Contact" },
-];
+import { useTranslations } from "next-intl";
 
 export const MobileDock = () => {
+    const t = useTranslations('Navigation');
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         if (element) element.scrollIntoView({ behavior: "smooth" });
     };
+
+    const navItems = [
+        { id: "home", icon: Home, label: t('home') },
+        { id: "timeline", icon: History, label: t('about') },
+        { id: "services", icon: Briefcase, label: t('services') },
+        { id: "contact", icon: Mail, label: t('contact') },
+    ];
 
     return (
         <div className="fixed bottom-6 left-0 right-0 z-50 flex justify-center md:hidden">
