@@ -19,25 +19,29 @@
                 "year": "2025",
                 "role": "Engenheiro de Software Líder",
                 "company": "Plusgrade",
-                "stack": "React, NodeJS, Cloudflare, JIRA"
+                "stack": "React, NodeJS, Cloudflare, JIRA",
+                "metric": "12-15 Engenheiros"
             },
             "job2": {
                 "year": "2021",
                 "role": "Desenvolvedor de Software Líder",
                 "company": "MEDFAR Solutions Cliniques",
-                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server",
+                "metric": "4-11 Desenvolvedores"
             },
             "job3": {
                 "year": "2020",
                 "role": "Líder Técnico Frontend",
                 "company": "Mavtek",
-                "stack": "VueJS, AWS, PHP, MySQL"
+                "stack": "VueJS, AWS, PHP, MySQL",
+                "metric": "2M+ Usuários"
             },
             "job4": {
                 "year": "2018",
                 "role": "Desenvolvedor de Software",
                 "company": "AZUR GROUP",
-                "stack": "Angular, C#, Visual Studio"
+                "stack": "Angular, C#, Visual Studio",
+                "metric": "Migração Técnica"
             }
         }
     },
@@ -61,7 +65,18 @@
     "Navigation": {
         "home": "Home",
         "about": "Sobre",
-        "services": "Serviços",
+        "services": "Expertise",
         "contact": "Contato"
+    },
+    "Contact": {
+        "title": "Pronto para Escalar?",
+        "subtitle": "Vamos discutir como minha liderança pode acelerar seu roadmap.",
+        "form": {
+            "name": "Seu Nome",
+            "email": "Seu Email",
+            "subject": "Assunto",
+            "message": "Mensagem",
+            "submit": "Enviar Mensagem"
+        }
     }
 }

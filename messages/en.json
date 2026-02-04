@@ -19,25 +19,29 @@
                 "year": "2025",
                 "role": "Lead Software Engineer",
                 "company": "Plusgrade",
-                "stack": "React, NodeJS, Cloudflare, JIRA"
+                "stack": "React, NodeJS, Cloudflare, JIRA",
+                "metric": "12-15 Engineers"
             },
             "job2": {
                 "year": "2021",
                 "role": "Lead Software Developer",
                 "company": "MEDFAR Solutions Cliniques",
-                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server",
+                "metric": "4-11 Developers"
             },
             "job3": {
                 "year": "2020",
                 "role": "Frontend Technical Lead",
                 "company": "Mavtek",
-                "stack": "VueJS, AWS, PHP, MySQL"
+                "stack": "VueJS, AWS, PHP, MySQL",
+                "metric": "2M+ Users"
             },
             "job4": {
                 "year": "2018",
                 "role": "Software Developer",
                 "company": "AZUR GROUP",
-                "stack": "Angular, C#, Visual Studio"
+                "stack": "Angular, C#, Visual Studio",
+                "metric": "Tech Migration"
             }
         }
     },
@@ -61,7 +65,18 @@
     "Navigation": {
         "home": "Home",
         "about": "About",
-        "services": "Services",
+        "services": "Expertise",
         "contact": "Contact"
+    },
+    "Contact": {
+        "title": "Ready to Scale?",
+        "subtitle": "Let's discuss how my leadership can accelerate your roadmap.",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message"
+        }
     }
 }

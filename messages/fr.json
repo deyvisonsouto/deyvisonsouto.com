@@ -19,25 +19,29 @@
                 "year": "2025",
                 "role": "Ingénieur Logiciel Principal",
                 "company": "Plusgrade",
-                "stack": "React, NodeJS, Cloudflare, JIRA"
+                "stack": "React, NodeJS, Cloudflare, JIRA",
+                "metric": "12-15 Ingénieurs"
             },
             "job2": {
                 "year": "2021",
                 "role": "Développeur Logiciel Principal",
                 "company": "MEDFAR Solutions Cliniques",
-                "stack": "C# .NET6, React, Azure DevOps, SQL Server"
+                "stack": "C# .NET6, React, Azure DevOps, SQL Server",
+                "metric": "4-11 Développeurs"
             },
             "job3": {
                 "year": "2020",
                 "role": "Responsable Technique Frontend",
                 "company": "Mavtek",
-                "stack": "VueJS, AWS, PHP, MySQL"
+                "stack": "VueJS, AWS, PHP, MySQL",
+                "metric": "2M+ Utilisateurs"
             },
             "job4": {
                 "year": "2018",
                 "role": "Développeur Logiciel",
                 "company": "AZUR GROUP",
-                "stack": "Angular, C#, Visual Studio"
+                "stack": "Angular, C#, Visual Studio",
+                "metric": "Migration Technique"
             }
         }
     },
@@ -61,7 +65,18 @@
     "Navigation": {
         "home": "Accueil",
         "about": "À propos",
-        "services": "Services",
+        "services": "Expertise",
         "contact": "Contact"
+    },
+    "Contact": {
+        "title": "Prêt à Passer à l'Échelle ?",
+        "subtitle": "Discutons de la manière dont mon leadership peut accélérer votre roadmap.",
+        "form": {
+            "name": "Votre Nom",
+            "email": "Votre Email",
+            "subject": "Sujet",
+            "message": "Message",
+            "submit": "Envoyer le Message"
+        }
     }
 }

@@ -47,6 +47,11 @@ export const Timeline = () => {
                                     <h3 className="text-xl font-bold text-white mb-1">{t(`jobs.${key}.role`)}</h3>
                                     <p className="text-slate-400 text-sm mb-4">at {t(`jobs.${key}.company`)}</p>
 
+                                    <div className="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/30 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                                        <Briefcase size={12} />
+                                        {t(`jobs.${key}.metric`)}
+                                    </div>
+
                                     <div className="flex gap-2 flex-wrap">
                                         {t(`jobs.${key}.stack`).split(", ").map(tech => (
                                             <span key={tech} className="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] uppercase tracking-wider text-slate-300">
