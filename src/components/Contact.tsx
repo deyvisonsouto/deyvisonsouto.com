@@ -1,24 +1,49 @@
 "use client";
 
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolio";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export const Contact = () => {
     const t = useTranslations('Contact');
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [errorMessage, setErrorMessage] = useState('');
 
-    // Using a simple form submission handler for mailto
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setStatus('loading');
+        setErrorMessage('');
+
         const formData = new FormData(e.currentTarget);
-        const name = formData.get('name') as string;
-        const subject = formData.get('subject') as string;
-        const message = formData.get('message') as string;
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+        };
 
-        // Construct mailto link
-        const mailtoLink = `mailto:deyvisonsouto@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\n\n${message}`)}`;
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-        window.location.href = mailtoLink;
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to send message');
+            }
+
+            setStatus('success');
+            (e.target as HTMLFormElement).reset();
+        } catch (error) {
+            console.error('Contact error:', error);
+            setStatus('error');
+            setErrorMessage(error instanceof Error ? error.message : 'Something went wrong');
+        }
     };
 
     return (
@@ -54,18 +79,18 @@ export const Contact = () => {
                         type="text"
                         placeholder={t('form.name')}
                         required
-                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all"
+                        disabled={status === 'loading'}
+                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all disabled:opacity-50"
                     />
                 </div>
-                {/* Email is technically not needed for mailto source, but user might expect to fill it. 
-                    However, with mailto, the "from" is the user's email client. 
-                    We can ask for it to include in the body potentially. */}
                 <div className="relative group">
                     <input
                         name="email"
                         type="email"
                         placeholder={t('form.email')}
-                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all"
+                        required
+                        disabled={status === 'loading'}
+                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all disabled:opacity-50"
                     />
                 </div>
                 <div className="relative group">
@@ -74,7 +99,8 @@ export const Contact = () => {
                         type="text"
                         placeholder={t('form.subject')}
                         required
-                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all"
+                        disabled={status === 'loading'}
+                        className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all disabled:opacity-50"
                     />
                 </div>
 
@@ -83,12 +109,38 @@ export const Contact = () => {
                     placeholder={t('form.message')}
                     rows={4}
                     required
-                    className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all"
+                    disabled={status === 'loading'}
+                    className="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all disabled:opacity-50"
                 />
 
-                <button type="submit" className="w-full py-4 rounded-xl bg-cyan-gradient text-black font-bold shadow-neon hover:opacity-90 transition-opacity mt-4">
-                    {t('form.submit')}
+                <button
+                    type="submit"
+                    disabled={status === 'loading'}
+                    className="w-full py-4 rounded-xl bg-cyan-gradient text-black font-bold shadow-neon hover:opacity-90 transition-opacity mt-4 disabled:opacity-50 flex items-center justify-center gap-2"
+                >
+                    {status === 'loading' ? (
+                        <>
+                            <Loader2 className="animate-spin" size={20} />
+                            Sending...
+                        </>
+                    ) : (
+                        t('form.submit')
+                    )}
                 </button>
+
+                {status === 'success' && (
+                    <div className="flex items-center gap-2 text-green-400 bg-green-400/10 p-4 rounded-xl border border-green-400/20">
+                        <CheckCircle size={20} />
+                        <p>Message sent successfully!</p>
+                    </div>
+                )}
+
+                {status === 'error' && (
+                    <div className="flex items-center gap-2 text-red-400 bg-red-400/10 p-4 rounded-xl border border-red-400/20">
+                        <AlertCircle size={20} />
+                        <p>{errorMessage || 'Failed to send message. Please try again.'}</p>
+                    </div>
+                )}
             </form>
         </section>
     );
