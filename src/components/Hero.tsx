@@ -43,7 +43,10 @@ export const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.5 }}
                     >
-                        <button className="group relative px-8 py-4 bg-cyan-gradient rounded-full text-black font-bold text-lg shadow-neon hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        <button
+                            onClick={() => document.getElementById('expertise')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="group relative px-8 py-4 bg-cyan-gradient rounded-full text-black font-bold text-lg shadow-neon hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                        >
                             {t('viewPortfolio')}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>

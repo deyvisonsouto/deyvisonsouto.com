@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { Settings, Users, Cloud } from "lucide-react";
 
 const EXPERTISE = [
-    { title: "System Architecture", icon: Settings, desc: "Designing scalable assets and distributed channels." },
-    { title: "Team Scaling", icon: Users, desc: "Mentoring senior engineers and managing distributed systems." },
-    { title: "Cloud Strategy", icon: Cloud, desc: "Cloud strategy in common traversable architectures." },
+    { title: "System Architecture", icon: Cloud, desc: "Designing scalable assets, distributed channels, and cloud strategies (AWS/Azure/Cloudflare)." },
+    { title: "Engineering Management", icon: Users, desc: "Leading teams of 15+ engineers, hiring, mentorship, and capacity forecasting." },
+    { title: "Process & Methodology", icon: Settings, desc: "Implementing SCRUM, CMMI, and ITIL to optimize workflows and incident management." },
 ];
 
 export const Expertise = () => {
     return (
-        <section className="py-20 px-6 max-w-7xl mx-auto">
+        <section id="expertise" className="py-20 px-6 max-w-7xl mx-auto">
             <h3 className="text-sm font-mono text-slate-500 uppercase tracking-widest mb-8">Core Expertise</h3>
 
             <div className="grid md:grid-cols-3 gap-6">

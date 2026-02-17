@@ -18,7 +18,7 @@ export async function POST(req: Request) {
         }
 
         const { data, error } = await resend.emails.send({
-            from: 'Contact Form <contact@deyvisonsouto.com>',
+            from: 'Contact Form <contact@contact.deyvisonsouto.com>',
             to: ['deyvisonsouto@gmail.com'],
             replyTo: email,
             subject: `New Contact Form Submission: ${subject}`,

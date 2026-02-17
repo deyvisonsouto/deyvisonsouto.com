@@ -76,7 +76,8 @@
             "email": "Votre Email",
             "subject": "Sujet",
             "message": "Message",
-            "submit": "Envoyer le Message"
+            "submit": "Envoyer le Message",
+            "success": "Message envoyé avec succès!"
         }
     }
 }

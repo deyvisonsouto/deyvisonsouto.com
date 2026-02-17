@@ -131,7 +131,7 @@ export const Contact = () => {
                 {status === 'success' && (
                     <div className="flex items-center gap-2 text-green-400 bg-green-400/10 p-4 rounded-xl border border-green-400/20">
                         <CheckCircle size={20} />
-                        <p>Message sent successfully!</p>
+                        <p>{t('form.success')}</p>
                     </div>
                 )}
 
